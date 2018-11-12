@@ -1,0 +1,7 @@
+IP addresses
+
+    1. Hostname
+    2. IP Address
+    3. Operating system
+    4. VM
+    5. Notes
