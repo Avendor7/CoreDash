@@ -1,34 +1,43 @@
 @extends('layouts.default')
 @section('content')
-<br>
-<br>
-<table class="table table-bordered table-dark">
-    <thead>
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">First</th>
-            <th scope="col">Last</th>
-            <th scope="col">Handle</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <th scope="row">1</th>
-            <td>Mark</td>
-            <td>Otto</td>
-            <td>@mdo</td>
-        </tr>
-        <tr>
-            <th scope="row">2</th>
-            <td>Jacob</td>
-            <td>Thornton</td>
-            <td>@fat</td>
-        </tr>
-        <tr>
-            <th scope="row">3</th>
-            <td colspan="2">Larry the Bird</td>
-            <td>@twitter</td>
-        </tr>
-    </tbody>
-</table>
+<div class="card text-white bg-primary" style="width: 100%;">
+    <div class="card-header">IP Addresses</div>
+    <div class="card-body">
+      <table class="table table-bordered table-dark">
+        <thead>
+            <tr>
+                <th scope="col">Hostname</th>
+                <th scope="col">IP Address</th>
+                <th scope="col">Operating System</th>
+                <th scope="col">VM</th>
+                <th scope="col">Notes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Inception</th>
+                <td>192.168.5.123</td>
+                <td>Windows 10</td>
+                <td>False</td>
+                <td>Dell Laptop</td>
+            </tr>
+            <tr>
+                <th scope="row">Inception</th>
+                <td>192.168.5.123</td>
+                <td>Windows 10</td>
+                <td>False</td>
+                <td>Dell Laptop</td>
+            </tr>
+            <tr>
+                <th scope="row">Inception</th>
+                <td>192.168.5.123</td>
+                <td>Windows 10</td>
+                <td>False</td>
+                <td>Dell Laptop</td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+
+</div>
 @stop
