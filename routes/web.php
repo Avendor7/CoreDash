@@ -17,3 +17,5 @@ Route::get('/', function () {
 Route::get('/ipaddresses', function () {
     return view('pages.ipaddresses');
 });
+
+Route::resource('ipaddress', 'IPAddressController');
