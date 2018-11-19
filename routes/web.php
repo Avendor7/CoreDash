@@ -14,8 +14,6 @@
 Route::get('/', function () {
     return view('pages.home');
 });
-Route::get('/ipaddresses', function () {
-    return view('pages.ipaddresses');
-});
+
 
 Route::resource('ipaddress', 'IPAddressController');

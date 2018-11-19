@@ -6,6 +6,7 @@
       <table class="table table-bordered table-dark">
         <thead>
             <tr>
+                <th scope="col">ID</th>
                 <th scope="col">Hostname</th>
                 <th scope="col">IP Address</th>
                 <th scope="col">Operating System</th>
@@ -14,27 +15,16 @@
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">Inception</th>
-                <td>192.168.5.123</td>
-                <td>Windows 10</td>
-                <td>False</td>
-                <td>Dell Laptop</td>
-            </tr>
-            <tr>
-                <th scope="row">Inception</th>
-                <td>192.168.5.123</td>
-                <td>Windows 10</td>
-                <td>False</td>
-                <td>Dell Laptop</td>
-            </tr>
-            <tr>
-                <th scope="row">Inception</th>
-                <td>192.168.5.123</td>
-                <td>Windows 10</td>
-                <td>False</td>
-                <td>Dell Laptop</td>
-            </tr>
+            @foreach($ipaddresses as $ipaddress)
+        <tr>
+            <td>{{$ipaddress->id}}</td>
+            <td>{{$ipaddress->hostname}}</td>
+            <td>{{$ipaddress->ip_address}}</td>
+            <td>{{$ipaddress->operating_system}}</td>
+            <td>{{$ipaddress->vm}}</td>
+            <td>{{$ipaddress->notes}}</td>
+        </tr>
+        @endforeach
         </tbody>
     </table>
     </div>

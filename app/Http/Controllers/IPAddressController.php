@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\IpAddresses;
 
 class IPAddressController extends Controller
 {
@@ -13,7 +14,9 @@ class IPAddressController extends Controller
      */
     public function index()
     {
-        //
+        $ipaddresses = IpAddresses::all();
+
+        return view('pages.ipaddresses', compact('ipaddresses'));
     }
 
     /**
