@@ -27,6 +27,7 @@ class IPAddressController extends Controller
     public function create()
     {
         //
+        return view('pages.ipaddresses', compact('ipaddresses'));
     }
 
     /**

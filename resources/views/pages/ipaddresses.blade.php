@@ -28,6 +28,15 @@
         </tbody>
     </table>
     </div>
-
+    <!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+    Launch demo modal
+  </button>
 </div>
+
+
+  
+  @include('includes.ipaddress.create')
+
+
 @stop
